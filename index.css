@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* form */
+#form {
+    max-width: 800px;
+    margin: 10vh auto 10vh auto;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: bold;
+    color: rgb(255, 208, 0);
+    background-color: #1b5a75;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+#form button:hover {
+    background-color: #4c9fc3;
+}
+
+/* header/title */
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 25px;
+}
+
+.header-container img {
+    max-width: 20%;
+}
+
+.header-container h1 {
+    font-size: 50px;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* questionnaire */
+.questionnaire-container {
+    display: "flex";
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 10px;
+	display: block;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+/* response */
+.response-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.poster-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.poster {
+    max-width: 30%;
+    border-radius: 30px;
+}
+
+.response {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    line-height: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.loading-paragraph {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}

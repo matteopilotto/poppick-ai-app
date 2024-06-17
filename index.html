@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <div class="header-container">
+                <h1>PopPick</h1>
+                <img src="./logo.png">
+            </div>
+
+            <div class="questionnaire-container">
+                <div class="input-control">
+                    <label for="question1">What's your favorite movie and why?</label>
+                    <input id="question1" name="question1" type="text">
+                </div>
+    
+                <div class="input-control">
+                    <label for="question2">Are you in the mood for something new or classic?</label>
+                    <input id="question2" name="question2" type="text">
+                </div>
+    
+                <div class="input-control">
+                    <label for="question3">Do you wanna have fun or do you want something serious?</label>
+                    <input id="question3" name="question3" type="text">
+                </div>
+                <button id="submit-button" type="submit">Let's go</button>
+            </div>
+            <p class="loading-paragraph" style="display: none">Thinking...</p>
+            <div class="response-container" style="display: none">
+                <div class="poster-container"></div>
+                <p class="response"></p>
+                <button id="refresh-button" type="submit">Start Over</button>
+            </div>
+        </form>
+        
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
